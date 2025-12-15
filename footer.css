@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-dark: #005B4C;
+    /* Deep teal green */
+    --primary-light: #D8EB8E;
+    /* Light lime green */
+    --background: #F8FCF5;
+    /* Very light green background */
+    --white: #FFFFFF;
+    --dark: #1A2C28;
+    /* Dark charcoal for text */
+    --gray: #F0F5ED;
+    --transition: all 0.3s ease;
+    --shadow: 0 4px 12px rgba(0, 91, 76, 0.08);
+    --shadow-lg: 0 10px 30px rgba(0, 91, 76, 0.15);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark);
+    background-color: var(--background);
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-size: 1rem;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+/* Footer Customization */
+footer {
+    background: linear-gradient(135deg, var(--primary-dark), #007A63) !important;
+    padding: 4rem 0 4rem !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.column-spacing {
+    padding-left: 5rem;
+}
+
+@media (max-width: 768px) {
+    .column-spacing {
+        padding: 25px;
+    }
+}
+
+/* Hide checkbox */
+/* FOOTER ACCORDION STYLES */
+.footer-accordion {
+    position: relative;
+    list-style: none;
+}
+
+/* Hide the checkbox */
+.footer-accordion input[type="checkbox"] {
+    display: none;
+}
+
+/* Footer label with proper icon alignment */
+.footer-label {
+    color: var(--white);
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Changed from space-between */
+    gap: 8px;
+    /* Space between icon and text */
+    position: relative;
+}
+
+.footer-label:hover {
+    color: var(--primary-light);
+}
+
+/* Icon positioning */
+.footer-label .bi-mortarboard-fill,
+.footer-label .bi-people-fill {
+    margin-right: 0;
+    /* Remove the 90px */
+    flex-shrink: 0;
+    width: 16px;
+    text-align: center;
+}
+
+/* Caret positioning - stays on the right */
+.footer-label .bi-caret-down-fill {
+    margin-left: auto;
+    margin-right: 120px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+}
+
+/* Rotate caret when checked */
+.footer-accordion input[type="checkbox"]:checked+.footer-label .bi-caret-down-fill {
+    transform: rotate(180deg);
+}
+
+/* Sublist styles */
+.footer-sublist {
+    list-style: none;
+    padding-left: 24px;
+    /* Align with icon + text */
+    margin-top: 8px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+/* Show sublist when checkbox is checked */
+.footer-accordion input[type="checkbox"]:checked~.footer-sublist {
+    max-height: 200px;
+}
+
+/* Sublist items */
+.footer-sublist li {
+    margin-bottom: 6px;
+}
+
+.footer-sublist a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+    display: block;
+    padding: 2px 0;
+}
+
+.footer-sublist a:hover {
+    color: var(--primary-light);
+    padding-left: 4px;
+}
+
+
+footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+    opacity: 0.05;
+    z-index: -1;
+}
+
+footer h3 {
+    color: var(--white) !important;
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+footer h3:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary-light);
+    bottom: 0;
+    left: 0;
+}
+
+footer a {
+    transition: var(--transition);
+    display: inline-block;
+}
+
+footer a:hover {
+    color: var(--primary-light) !important;
+    transform: translateX(5px);
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: var(--transition);
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    background: var(--primary-light);
+    color: var(--primary-dark) !important;
+    transform: translateY(-3px);
+}
