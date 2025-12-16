@@ -1,12 +1,12 @@
 :root {
     --turquiose: #005B4C;
     --pastel-orange: #D8EB8E;
-    --light-green: #e9f5e9;
+    --light-green: #78ff78;
     --bg-color: #F8FCF5;
     --dark: #1A2C28;
     --text: #333333;
     --gray: #555555;
-    --light-gray: #f0f0f0;
+    --light-gray: #3d5f00;
     --border-color: #ddd;
 }
 
@@ -545,7 +545,7 @@ body {
 }
 
 .project-benefits p {
-    color: var(--light-green);
+    color: var(--light-gray);
     font-size: 0.95rem;
     line-height: 1.5;
     margin: 0;

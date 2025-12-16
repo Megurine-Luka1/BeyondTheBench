@@ -20,6 +20,37 @@
     --shadow-lg: 0 10px 30px rgba(0, 91, 76, 0.15);
 }
 
+/* Make all text in footer white */
+footer,
+footer h1,
+footer h2,
+footer h3,
+footer h4,
+footer h5,
+footer h6,
+footer p,
+footer span,
+footer li,
+footer a {
+    color: #ffffff !important;
+}
+
+/* Make footer links fully white */
+footer a {
+    color: #ffffff !important;
+}
+
+.footer-sublist a {
+    color: #ffffff !important;
+}
+
+/* Optional: hover stays white too */
+footer a:hover,
+.footer-sublist a:hover {
+    color: #ffffff !important;
+}
+
+
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--dark);
@@ -37,6 +68,7 @@ footer {
     padding: 4rem 0 4rem !important;
     position: relative;
     overflow: hidden;
+    color: #ffffff !important;
 }
 
 .column-spacing {
@@ -63,7 +95,8 @@ footer {
 
 /* Footer label with proper icon alignment */
 .footer-label {
-    color: var(--white);
+    color: #ffffff !important;
+    ;
     font-size: 0.9rem;
     font-weight: 500;
     cursor: pointer;
@@ -123,6 +156,7 @@ footer {
 /* Sublist items */
 .footer-sublist li {
     margin-bottom: 6px;
+    color: #ffffff !important;
 }
 
 .footer-sublist a {
@@ -135,8 +169,8 @@ footer {
 }
 
 .footer-sublist a:hover {
-    color: var(--primary-light);
     padding-left: 4px;
+    color: #ffffff !important;
 }
 
 
@@ -173,11 +207,13 @@ footer h3:after {
 footer a {
     transition: var(--transition);
     display: inline-block;
+    color: #ffffff !important;
 }
 
 footer a:hover {
     color: var(--primary-light) !important;
     transform: translateX(5px);
+    color: #ffffff !important;
 }
 
 .social-icons a {
