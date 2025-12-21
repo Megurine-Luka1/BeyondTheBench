@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myanmar Bird Sound Quiz</title>
+    <title>Myanmar Bird Sound Quiz | Beyond the Bench </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
 
@@ -921,12 +921,7 @@
                         <div class="bird-name">Burmese Bushlark</div>
                         <div class="bird-scientific">(Mirafra microptera)</div>
                     </div>
-                    
-                    <div class="bird-option" data-correct="false" data-value="D">
-                        <img src="https://i.pinimg.com/736x/c1/f2/50/c1f250ea0313e2151b90a17471049921.jpg" alt="Grey-sided Laughingthrush" class="bird-image">
-                        <div class="bird-name">Grey-sided Laughingthrush</div>
-                        <div class="bird-scientific">(Pterorhinus caerulatus)</div>
-                    </div>
+                
                 </div>
             </div>
 
@@ -973,11 +968,7 @@
                         <div class="bird-scientific">Prinia hodgsonii</div>
                     </div>
                     
-                    <div class="bird-option" data-correct="false" data-value="D">
-                        <img src="https://i.pinimg.com/736x/c1/f2/50/c1f250ea0313e2151b90a17471049921.jpg" alt="Grey-sided Laughingthrush" class="bird-image">
-                        <div class="bird-name">Grey-sided Laughingthrush</div>
-                        <div class="bird-scientific">(Pterorhinus caerulatus)</div>
-                    </div>
+                  
                 </div>
             </div>
 
@@ -1021,12 +1012,7 @@
                         <div class="bird-name">Jerdon's Minivet</div>
                         <div class="bird-scientific">(Pericrocotus albifrons)</div>
                     </div>
-                    
-                    <div class="bird-option" data-correct="false" data-value="D">
-                        <img src="https://i.pinimg.com/1200x/3d/35/78/3d3578fa2a9f231ab7afcb16f83ad856.jpg" alt="White-browed Piculet" class="bird-image">
-                        <div class="bird-name">White-browed Piculet</div>
-                        <div class="bird-scientific">(Sasia ochracea)</div>
-                    </div>
+                 
                 </div>
             </div>
 
@@ -1406,6 +1392,14 @@ restartBtn.onclick = () => location.reload();
     // Initialize quiz
     initQuiz();
 });
+
+prevBtn.onclick = () => {
+    stopAllAudio();
+    if (quizState.currentQuestion > 1) {
+        changeQuestion(quizState.currentQuestion - 1);
+    }
+};
+
 </script>
 
 

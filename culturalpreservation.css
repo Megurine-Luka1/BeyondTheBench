@@ -41,7 +41,7 @@ body {
 .hero-title {
     color: var(--pastel-orange);
     font-weight: 800;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 .hero-img {
@@ -304,6 +304,10 @@ svg {
         max-height: 1000px;
         /* or auto if you prefer */
     }
+
+    .hero-title{
+        font-size: 35px;
+    }
 }
 
 /* ==========================
@@ -436,6 +440,9 @@ svg {
     .cultural-title {
         font-size: 1.8rem;
     }
+     .hero-title{
+        font-size: 35px;
+    }
 }
 
 
@@ -456,10 +463,6 @@ svg {
     /* Hero Section */
     .hero-section-culturepreserve {
         background-position: 20% 50%;
-    }
-
-    .hero-title {
-        font-size: 36px;
     }
 
     .hero-img2 {
@@ -524,3 +527,4 @@ svg {
         transition: transform 0.25s ease;
     }
 }
+

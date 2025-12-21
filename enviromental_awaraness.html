@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beyond the Bench | Environmental Awareness</title>
+    <title> Environmental Awareness | Beyond the Bench </title>
 
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -30,17 +30,19 @@
     <link rel="shortcut icon" href="image/Screenshot_2025-12-13_at_10.06.48_PM-removebg-preview.png"
         type="image/x-icon">
 
+    <!-- Custom CSS Files -->
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="auth.css">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="enviromental_awareness.css">
     <link rel="stylesheet" href="footer.css">
 
-    <!-- Custom CSS Files -->
-    <link rel="stylesheet" href="nav.css">
-    <link rel="stylesheet" href="auth.css">
+   
 </head>
 
 <body>
-    <!-- Toast Container -->
+   <!-- Toast Container -->
     <div class="toast-container"></div>
 
     <!-- Navbar -->
@@ -70,15 +72,15 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="What's_park_reviltization_Why_it_matters.html">Park
+                            <a class="nav-link" href="parkrevitilization.html">Park
                                 Revitalization</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                            <a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown">
                                 Learning Hub <i class="bi bi-caret-down-fill"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="enviromental_awaraness.html">Environmental
+                                <li><a class="dropdown-item active" href="enviromental_awaraness.html">Environmental
                                         Awareness</a></li>
                                 <li><a class="dropdown-item" href="culturalpreservation.html">Cultural Preservation</a>
                                 </li>
@@ -86,11 +88,11 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown">
                                 Community Hub <i class="bi bi-caret-down-fill"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="combinedfinal.html">Quizzes + Mini Games</a></li>
+                                <li><a class="dropdown-item" href="combinedfinal.html">Fun Quizzes</a></li>
                                 <li><a class="dropdown-item" href="blogpage.html">Blogs & Youth Storytelling</a></li>
                                 <li><a class="dropdown-item" href="events.html">Special Events</a></li>
                             </ul>
@@ -273,6 +275,7 @@
         </div>
     </div>
 
+
     <!-- Hero Section -->
     <section class="hero py-5" id="home">
         <div class="container">
@@ -372,10 +375,7 @@
                             <div class="leaf-border-brown"></div>
                             <img src="https://i.pinimg.com/736x/bb/20/ef/bb20efeec3a781606864f074671c7aad.jpg"
                                 alt="U Ottama Park & Shwe Dagon Pagoda" class="img-fluid">
-                            <div class="leaf-badge">
-                                <i class="fas fa-university"></i>
-                                <span>Historic View</span>
-                            </div>
+                          
                         </div>
                     </div>
                 </div>
@@ -515,9 +515,9 @@
                                     </ul>
                                     <div class="flipbook-action mt-3">
                                         <!-- YOUR FIRST PDF FILE -->
-                                        <a href="Myanmar_Trees_and_Plants_80_Romanized.pdf"
-                                            class="btn btn-sm btn-primary" download="Myanmar_Trees_and_Plants.pdf">
-                                            <i class="fas fa-download me-1"></i>Download Plants Guide
+                                        <a href="pdf/Myanmar_Trees_Plants.pdf"
+                                            class="btn btn-sm btn-primary" download>
+                                            <i class="fas fa-download me-1"></i>Download Guide
                                         </a>
                                     </div>
                                 </div>
@@ -609,8 +609,8 @@
                                     </ul>
                                     <div class="flipbook-action mt-3">
                                         <!-- SECOND PDF FILE -->
-                                        <a href="mya152417.pdf" class="btn btn-sm btn-primary"
-                                            download="Conservation_Guide.pdf">
+                                        <a href="pdf/Conservation_Guide.pdf" class="btn btn-sm btn-primary"
+                                            download>
                                             <i class="fas fa-download me-1"></i>Download Guide
                                         </a>
                                     </div>
@@ -653,7 +653,7 @@
                         </div>
 
                         <div class="progress mb-3">
-                            <div class="progress-bar" id="progress-fill" role="progressbar" style="width: 0%"></div>
+                            <div class="progress-bar environment-progress" id="progress-fill" role="progressbar" style="width: 0%"></div>
                         </div>
                         <div class="progress-text text-end mb-4" id="progress-text">0% complete</div>
 
@@ -716,9 +716,10 @@
                         </div>
 
                         <div class="todo-actions d-flex gap-3">
-                            <button class="btn btn-outline-primary flex-grow-1" id="reset-btn">
+                            <button class="btn flex-grow-1" id="reset-btn">
                                 <i class="fas fa-redo me-2"></i>Reset Checklist
                             </button>
+                            <!-- here !-->
                             <button class="btn btn-primary flex-grow-1" id="certificate-btn">
                                 <i class="fas fa-certificate me-2"></i>Download Certificate
                             </button>
@@ -1065,14 +1066,14 @@
         </div>
     </div>
 
-    <!--Footer-->
+     <!--Footer-->
     <footer class="bg-dark text-white py-5" id="contact">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="row ">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="image/logo2.jpg" alt="Logo" class="footer-logo mb-3">
                     <h3 class="h5 mb-3"><i class="fas fa-leaf me-2"></i>Beyond the Bench</h3>
-                    <p class="small">We believe in the transformative power of nature and therapy for health, growth,
-                        and self-discovery. Join us in preserving our natural spaces for future generations.</p>
+                    <p class="small">We inspire people to look beyond the bench — discovering the environmental, cultural, and social value of our parks while encouraging youth to care for and protect these shared spaces.</p>
                     <div class="social-icons mt-4">
                         <a href="https://www.facebook.com/" class="text-white me-3"><i
                                 class="fab fa-facebook-f"></i></a>
@@ -1083,20 +1084,19 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="col-lg-3 mb-4 mb-lg-0">
                     <h3 class="h5 mb-3">Quick Links</h3>
                     <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none"><i
-                                    class="fas fa-home me-2"></i>Home</a></li>
-                        <li class="mb-2"><a href="aboutus.html" class="text-white text-decoration-none"><i
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none  footer-link">
+                            <i class="fas fa-home me-2"></i>Home</a></li>
+                        <li class="mb-2"><a href="aboutus.html" class="text-white text-decoration-none footer-link"><i
                                     class="fas fa-info-circle me-2"></i>About Us</a></li>
 
 
                         <li class="mb-1 footer-accordion">
                             <input type="checkbox" id="learning">
                             <label for="learning" class="footer-label"><i class="bi bi-mortarboard-fill"></i>
-                                Learning Hub
-                                <i class="bi bi-caret-down-fill"></i>
+                                Learning Hub <i class="bi bi-caret-down-fill"></i>
                             </label>
 
                             <ul class="footer-sublist">
@@ -1114,7 +1114,7 @@
                             </label>
 
                             <ul class="footer-sublist">
-                                <li><a href="combinedfinal.html">Quizzes + Mini Games</a></li>
+                                <li><a href="combinedfinal.html">Fun Quizzes</a></li>
                                 <li><a href="blogpage.html">Blogs & Youth Storytelling</a></li>
                                 <li><a href="events.html">Special Events</a></li>
                             </ul>
@@ -1122,7 +1122,7 @@
 
 
                         <li><a href="https://docs.google.com/document/d/1KBs0JQOvbeFJuwe8dePoCFIE3pOzIx7nn3qXni5PmcY/edit?usp=sharing"
-                                class="text-white text-decoration-none"><i
+                                class="text-white text-decoration-none footer-link"><i
                                     class="fas fa-envelope me-2"></i>References</a></li>
                     </ul>
                 </div>
@@ -1149,8 +1149,8 @@
             <hr class="my-4 opacity-25">
 
             <div class="text-center small">
-                <p class="mb-0">&copy; 2025 Beyond the Bench. All rights reserved. | Designed for environmental
-                    awareness and wellness.</p>
+                <p class="mb-0">&copy; 2025 Beyond the Bench. All rights reserved. | <a href="terms.html">Terms & Privacy</a></p>
+             
             </div>
         </div>
     </footer>
@@ -1244,127 +1244,69 @@
                 updateChecklist();
             });
 
-            // Certificate button functionality - IMPROVED VERSION
-            certificateBtn.addEventListener('click', () => {
-                const completed = document.querySelectorAll('.todo-checkbox:checked').length;
+         document.addEventListener('DOMContentLoaded', function () {
+    const checkboxes = document.querySelectorAll('.todo-checkbox');
+    const todoCount = document.getElementById('todo-count');
+    const progressFill = document.getElementById('progress-fill');
+    const progressText = document.getElementById('progress-text');
+    const celebrationMessage = document.getElementById('celebration-message');
+    const resetBtn = document.getElementById('reset-btn');
+    const certificateBtn = document.getElementById('certificate-btn');
+    const totalTasks = checkboxes.length;
 
-                if (completed === totalTasks) {
-                    // Create a modal with certificate
-                    const certificateHTML = `
-                        <div class="modal fade" id="certificateModal" tabindex="-1">
-                            <div class="modal-dialog modal-dialog-centered modal-lg">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title">Certificate of Environmental Stewardship</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                    </div>
-                                    <div class="modal-body text-center">
-                                        <div class="certificate-design p-4">
-                                            <h3 class="mb-4" style="color: #005B4C; font-size: 2rem;">🏆 Certificate of Achievement 🏆</h3>
-                                            <div class="certificate-content mb-4">
-                                                <p class="mb-3" style="font-size: 1.2rem;">This certifies that</p>
-                                                <h4 class="mb-4" style="color: #005B4C; font-size: 1.8rem; font-weight: bold;">Environmental Champion</h4>
-                                                <p class="mb-3" style="font-size: 1.1rem;">has successfully completed all eco-friendly behaviors</p>
-                                                <p class="mb-3" style="font-size: 1.1rem;">and demonstrated exceptional commitment to environmental conservation.</p>
-                                                <hr style="border-color: #D8EB8E; margin: 2rem 0;">
-                                                <p class="mb-2" style="color: #555;">Date: ${new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}</p>
-                                                <p style="color: #555;">Beyond the Bench Environmental Awareness Program</p>
-                                            </div>
-                                            <div class="certificate-footer">
-                                                <button class="btn btn-primary me-2" id="downloadCertificateBtn">
-                                                    <i class="fas fa-download me-2"></i>Download Certificate
-                                                </button>
-                                                <button class="btn btn-outline-primary" id="shareCertificateBtn">
-                                                    <i class="fas fa-share-alt me-2"></i>Share Achievement
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    `;
+    function updateChecklist() {
+        let completed = 0;
 
-                    // Add modal to body
-                    const modalContainer = document.createElement('div');
-                    modalContainer.innerHTML = certificateHTML;
-                    document.body.appendChild(modalContainer);
+        checkboxes.forEach((checkbox, index) => {
+            const label = document.getElementById(`label${index + 1}`);
+            if (checkbox.checked) {
+                completed++;
+                label.classList.add('completed');
+            } else {
+                label.classList.remove('completed');
+            }
+        });
 
-                    // Show the modal
-                    const certificateModal = new bootstrap.Modal(document.getElementById('certificateModal'));
-                    certificateModal.show();
+        todoCount.textContent = `${completed}/${totalTasks} completed`;
 
-                    // Download functionality
-                    document.getElementById('downloadCertificateBtn').addEventListener('click', function () {
-                        const certificateText = `
-Certificate of Environmental Stewardship
-=========================================
+        const percentage = (completed / totalTasks) * 100;
+        progressFill.style.width = `${percentage}%`;
+        progressFill.setAttribute('aria-valuenow', percentage);
+        progressText.textContent = `${Math.round(percentage)}% complete`;
 
-AWARDED TO: Environmental Champion
+        if (percentage >= 100) {
+            progressFill.classList.add('bg-success');
+            progressFill.classList.remove('bg-primary');
+        } else {
+            progressFill.classList.add('bg-primary');
+            progressFill.classList.remove('bg-success');
+        }
 
-For demonstrating exceptional commitment to environmental
-conservation by completing all eco-friendly behaviors:
+        if (completed === totalTasks) {
+            celebrationMessage.classList.add('show');
+            celebrationMessage.style.display = 'block';
+            certificateBtn.disabled = false;
+            certificateBtn.innerHTML = '<i class="fas fa-certificate me-2"></i>Download Certificate';
+        } else {
+            celebrationMessage.classList.remove('show');
+            celebrationMessage.style.display = 'none';
+            certificateBtn.disabled = true;
+            certificateBtn.innerHTML = '<i class="fas fa-certificate me-2"></i>Complete Checklist First';
+        }
+    }
 
-✓ Take only photos, leave only footprints
-✓ Stay on marked trails to protect plants
-✓ Dispose of trash properly or take it with you
-✓ Observe wildlife from a respectful distance
-✓ Respect quiet zones and other visitors
-✓ Use reusable water bottles and containers
-✓ Report environmental concerns to park staff
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', updateChecklist);
+    });
 
-Date: ${new Date().toLocaleDateString()}
-Issued by: Beyond the Bench 
-                        `;
+    resetBtn.addEventListener('click', () => {
+        checkboxes.forEach(checkbox => {
+            checkbox.checked = false;
+        });
+        updateChecklist();
+    });
+}); // <-- Make sure this closing bracket exists
 
-                        const blob = new Blob([certificateText], { type: 'text/plain' });
-                        const url = window.URL.createObjectURL(blob);
-                        const a = document.createElement('a');
-                        a.href = url;
-                        a.download = 'Environmental_Stewardship_Certificate.txt';
-                        document.body.appendChild(a);
-                        a.click();
-                        document.body.removeChild(a);
-                        window.URL.revokeObjectURL(url);
-
-                        // Close modal after download
-                        certificateModal.hide();
-                        setTimeout(() => {
-                            modalContainer.remove();
-                        }, 500);
-
-                        alert('Certificate downloaded! Thank you for being an environmental champion!');
-                    });
-
-                    // Share functionality
-                    document.getElementById('shareCertificateBtn').addEventListener('click', function () {
-                        const shareText = `I just earned a Certificate of Environmental Stewardship from Beyond the Bench! 🎉🌿 I completed all eco-friendly behaviors to help protect our parks. Join me in making a difference! #EnvironmentalAwareness #BeyondTheBench`;
-
-                        if (navigator.share) {
-                            navigator.share({
-                                title: 'Environmental Stewardship Certificate',
-                                text: shareText,
-                                url: window.location.href
-                            });
-                        } else {
-                            // Fallback for browsers without Web Share API
-                            navigator.clipboard.writeText(shareText).then(() => {
-                                alert('Share text copied to clipboard! Paste it on your social media.');
-                            });
-                        }
-                    });
-
-                    // Remove modal from DOM when hidden
-                    document.getElementById('certificateModal').addEventListener('hidden.bs.modal', function () {
-                        modalContainer.remove();
-                    });
-
-                } else {
-                    // Show completion progress message
-                    const completedCount = document.querySelectorAll('.todo-checkbox:checked').length;
-                    alert(`You have completed ${completedCount} out of ${totalTasks} items. Complete all items to earn your certificate!`);
-                }
-            });
 
             // Initialize checklist on page load
             updateChecklist();

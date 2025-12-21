@@ -584,7 +584,7 @@ h6,
 
 .announcement-slider {
     position: relative;
-    height: 500px;
+    height: 600px;
     overflow: hidden;
 }
 
@@ -769,7 +769,7 @@ h6,
     }
 
     .announcement-slider {
-        height: 650px;
+        height: 900px;
     }
 }
 
@@ -821,7 +821,7 @@ h6,
     }
 
     .announcement-slider {
-        height: 700px;
+        height: 1000px;
     }
 
     .event-actions {
@@ -885,3 +885,5 @@ h6,
         font-size: 1.7rem;
     }
 }
+
+

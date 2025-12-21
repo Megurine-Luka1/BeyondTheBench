@@ -185,59 +185,80 @@ class UserManager {
         this.showToast('Logged out successfully', 'success');
     }
 
-    // Update navbar based on login state
-    updateNavbar() {
-        const userNavSection = document.getElementById('userNavSection');
-        if (!userNavSection) return;
-        
-        if (this.currentUser) {
-            // User is logged in - show profile
-            userNavSection.innerHTML = `
-                <div class="dropdown">
-                    <button class="btn btn-link text-decoration-none dropdown-toggle p-0" type="button" 
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="user-profile">
-                            <img src="${this.currentUser.avatar}" alt="${this.currentUser.firstName}" 
-                                 class="user-avatar" onerror="this.src='https://api.dicebear.com/7.x/avataaars/svg?seed=User&backgroundColor=b6e3f4'">
-                            <span class="user-name d-none d-md-inline">${this.currentUser.firstName}</span>
-                        </div>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end user-menu">
-                        <li>
-                            <div class="dropdown-item-text px-3 py-2">
-                                <small class="text-muted">Signed in as</small><br>
-                                <strong>${this.currentUser.firstName} ${this.currentUser.lastName}</strong>
-                            </div>
-                        </li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#"><i class="bi bi-person"></i> My Profile</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="bi bi-gear"></i> Settings</a></li>
-                        <li><a class="dropdown-item" href="#"><i class="bi bi-bookmark"></i> Saved Content</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#" id="logoutBtn"><i class="bi bi-box-arrow-right"></i> Logout</a></li>
-                    </ul>
-                </div>
-            `;
+   // Update navbar based on login state
+updateNavbar() {
+    const userNavSection = document.getElementById('userNavSection');
+    if (!userNavSection) return;
 
-            // Add logout event listener
-            setTimeout(() => {
-                const logoutBtn = document.getElementById('logoutBtn');
-                if (logoutBtn) {
-                    logoutBtn.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        this.logout();
-                    });
-                }
-            }, 100);
-        } else {
-            // User is not logged in - show sign in button
-            userNavSection.innerHTML = `
-                <button class="btn btn-custom rounded-pill px-4 mt-lg-0 mt-3" data-bs-toggle="modal" data-bs-target="#NavModal">
-                    <i class="bi bi-person me-1"></i> Sign In
-                </button>
-            `;
-        }
+    if (this.currentUser) {
+        userNavSection.innerHTML = `
+            <div class="dropdown user-dropdown">
+                <a href="#"
+                   class="dropdown-toggle user-toggle"
+                   data-bs-toggle="dropdown"
+                   aria-expanded="false">
+
+                    <img src="${this.currentUser.avatar}"
+                         alt="${this.currentUser.firstName}"
+                         class="user-avatar"
+                         onerror="this.src='https://api.dicebear.com/7.x/avataaars/svg?seed=User&backgroundColor=b6e3f4'">
+
+                    <span class="user-name d-none d-md-inline">
+                        ${this.currentUser.firstName}
+                    </span>
+                </a>
+
+                <ul class="dropdown-menu dropdown-menu-end user-menu">
+                    <li class="px-3 py-2">
+                        <small class="text-muted">Signed in as</small><br>
+                        <strong>${this.currentUser.firstName} ${this.currentUser.lastName}</strong>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-person"></i> My Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-gear"></i> Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">
+                            <i class="bi bi-bookmark"></i> Saved Content
+                        </a>
+                    </li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li>
+                        <a class="dropdown-item" href="#" id="logoutBtn">
+                            <i class="bi bi-box-arrow-right"></i> Logout
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        `;
+
+        setTimeout(() => {
+            const logoutBtn = document.getElementById('logoutBtn');
+            if (logoutBtn) {
+                logoutBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    this.logout();
+                });
+            }
+        }, 50);
+
+    } else {
+        userNavSection.innerHTML = `
+            <button class="btn btn-custom rounded-pill px-4 mt-lg-0 mt-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#NavModal">
+                <i class="bi bi-person me-1"></i> Sign In
+            </button>
+        `;
     }
+}
 
     // Show toast notification
     showToast(message, type = 'info') {
@@ -642,3 +663,5 @@ function setupForgotPassword() {
         });
     }
 }
+
+
