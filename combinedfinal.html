@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Park Explorer Quizzes</title>
+    <title>Quizzes | Beyond the Bench </title>
     <link href="https://fonts.googleapis.com/css2?family=Kurale&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -42,7 +42,7 @@
 
 <body>
 
-    <!-- Toast Container -->
+   <!-- Toast Container -->
     <div class="toast-container"></div>
 
     <!-- Navbar -->
@@ -72,11 +72,11 @@
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="What's_park_reviltization_Why_it_matters.html">Park
+                            <a class="nav-link" href="parkrevitilization.html">Park
                                 Revitalization</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown">
                                 Learning Hub <i class="bi bi-caret-down-fill"></i>
                             </a>
                             <ul class="dropdown-menu">
@@ -88,11 +88,11 @@
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown">
+                            <a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown">
                                 Community Hub <i class="bi bi-caret-down-fill"></i>
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="combinedfinal.html">Quizzes + Mini Games</a></li>
+                                <li><a class="dropdown-item active" href="combinedfinal.html">Fun Quizzes</a></li>
                                 <li><a class="dropdown-item" href="blogpage.html">Blogs & Youth Storytelling</a></li>
                                 <li><a class="dropdown-item" href="events.html">Special Events</a></li>
                             </ul>
@@ -117,7 +117,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title">Welcome to Beyond The Bench</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <button type="button" class="btn-close nav-btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body p-4">
                     <!-- Tabs for Login/Register -->
@@ -275,6 +275,7 @@
         </div>
     </div>
 
+
     <!-- Hero Section -->
     <section class="hero-section">
         <div class="container">
@@ -285,16 +286,21 @@
     </section>
 
     <!-- Main Quiz Section -->
-    <div class="container">
-        <div class="section-title">
-            <h2>Choose Your Quiz Adventure</h2>
-            <p>Each quiz offers a unique way to connect with parks and nature.</p>
-        </div>
+   <div class="container py-5">
 
-        <div class="quiz-cards">
-            <!-- Cultural Park Personality Test -->
-            <div class="quiz-card">
-                <div class="quiz-header">
+    <!-- Section Title -->
+    <div class="section-title text-center mb-5">
+        <h2>Choose Your Quiz Adventure</h2>
+        <p>Each quiz offers a unique way to connect with parks and nature.</p>
+    </div>
+
+    <!-- Quiz Cards -->
+    <div class="row justify-content-center g-4">
+
+        <!-- Quiz 1 -->
+        <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="quiz-card w-100">
+                <div class="quiz-header text-center">
                     <div class="quiz-icon">
                         <i class="fas fa-landmark"></i>
                     </div>
@@ -302,18 +308,17 @@
                     <p class="quiz-subtitle">Discover Your Park Persona and about Myanmar Local parks' culture!</p>
                 </div>
 
-                <div class="quiz-content">
+                <div class="quiz-content text-center">
                     <p class="quiz-description">
                         Uncover your unique relationship with cultural heritage in parks. This personality test reveals
                         how you interact with historical sites and cultural preservation.
                     </p>
 
-                    <div class="quiz-stats">
+                    <div class="quiz-stats d-flex justify-content-center gap-4">
                         <div class="stat-item">
                             <span class="stat-number">8</span>
                             <span class="stat-label">Questions</span>
                         </div>
-
                         <div class="stat-item">
                             <span class="stat-number">4</span>
                             <span class="stat-label">Park Personality Types</span>
@@ -326,24 +331,26 @@
                     </a>
                 </div>
             </div>
+        </div>
 
-            <!-- Environmental Awareness Quiz -->
-            <div class="quiz-card">
-                <div class="quiz-header">
+        <!-- Quiz 2 -->
+        <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="quiz-card w-100">
+                <div class="quiz-header text-center">
                     <div class="quiz-icon">
                         <i class="fas fa-leaf"></i>
                     </div>
-                    <h2 class="quiz-title">Environmental Awareness Quizz</h2>
+                    <h2 class="quiz-title">Environmental Awareness Quiz</h2>
                     <p class="quiz-subtitle">Test Your Eco-Knowledge about local parks</p>
                 </div>
 
-                <div class="quiz-content">
+                <div class="quiz-content text-center">
                     <p class="quiz-description">
                         How well do you understand environmental issues and sustainable practices in parks? Challenge
                         yourself with questions about ecosystems and conservation.
                     </p>
 
-                    <div class="quiz-stats">
+                    <div class="quiz-stats d-flex justify-content-center gap-4">
                         <div class="stat-item">
                             <span class="stat-number">10</span>
                             <span class="stat-label">Questions</span>
@@ -352,7 +359,6 @@
                             <span class="stat-number">5</span>
                             <span class="stat-label">Minutes</span>
                         </div>
-
                     </div>
 
                     <a href="environment.html" class="play-btn">
@@ -361,24 +367,26 @@
                     </a>
                 </div>
             </div>
+        </div>
 
-            <!-- Bird Audio Sound Quiz -->
-            <div class="quiz-card">
-                <div class="quiz-header">
+        <!-- Quiz 3 -->
+        <div class="col-12 col-sm-10 col-md-6 col-lg-4 d-flex justify-content-center">
+            <div class="quiz-card w-100">
+                <div class="quiz-header text-center">
                     <div class="quiz-icon">
                         <i class="fas fa-dove"></i>
                     </div>
-                    <h2 class="quiz-title">Bird Audio Challenge Quizz</h2>
-                    <p class="quiz-subtitle">Identify Birds by Sound and Be a master at it!</p>
+                    <h2 class="quiz-title">Bird Audio Challenge Quiz</h2>
+                    <p class="quiz-subtitle">Identify Birds by Sound and be a master!</p>
                 </div>
 
-                <div class="quiz-content">
+                <div class="quiz-content text-center">
                     <p class="quiz-description">
                         Can you identify common park birds by their songs and calls? This audio-based quiz trains your
-                        ear and helps you become a better birdwatcher.
+                        ear and helps you become a better birdwatcher. Be a bird master !
                     </p>
 
-                    <div class="quiz-stats">
+                    <div class="quiz-stats d-flex justify-content-center gap-4 flex-wrap">
                         <div class="stat-item">
                             <span class="stat-number">3</span>
                             <span class="stat-label">Audio Clips</span>
@@ -388,7 +396,7 @@
                             <span class="stat-label">Minutes</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">10+</span>
+                            <span class="stat-number">5+</span>
                             <span class="stat-label">Bird Species</span>
                         </div>
                     </div>
@@ -401,26 +409,35 @@
             </div>
         </div>
 
-        <!-- Information Section -->
-        <div class="info-section">
-            <h3 class="info-title">Why Take Our Quizzes?</h3>
-            <div class="info-content">
+    </div>
+
+    <br><br><br>
+    <!-- Info Section -->
+    <div class="info-section text-center mt-5">
+        <h3 class="info-title mb-4">Why Take Our Quizzes?</h3>
+
+        <div class="row justify-content-center g-4">
+            <div class="col-12 col-sm-6 col-lg-4">
                 <div class="info-item">
                     <div class="info-icon">
                         <i class="fas fa-brain"></i>
                     </div>
                     <h4>Educational & Fun</h4>
-                    <p>Learn about parks, nature, and culture in an engaging, interactive way.</p>
+                    <p>Learn about parks, nature, and culture in an engaging way.</p>
                 </div>
+            </div>
 
+            <div class="col-12 col-sm-6 col-lg-4">
                 <div class="info-item">
                     <div class="info-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h4>Track Your Progress</h4>
-                    <p>See your improvement over time with detailed results.</p>
+                    <p>See your improvement over time with clear results.</p>
                 </div>
+            </div>
 
+            <div class="col-12 col-sm-6 col-lg-4">
                 <div class="info-item">
                     <div class="info-icon">
                         <i class="fas fa-users"></i>
@@ -432,14 +449,16 @@
         </div>
     </div>
 
-    <!--Footer-->
+</div>
+
+     <!--Footer-->
     <footer class="bg-dark text-white py-5" id="contact">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4 mb-lg-0">
+            <div class="row ">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="image/logo2.jpg" alt="Logo" class="footer-logo mb-3">
                     <h3 class="h5 mb-3"><i class="fas fa-leaf me-2"></i>Beyond the Bench</h3>
-                    <p class="small">We believe in the transformative power of nature and therapy for health, growth,
-                        and self-discovery. Join us in preserving our natural spaces for future generations.</p>
+                    <p class="small">We inspire people to look beyond the bench — discovering the environmental, cultural, and social value of our parks while encouraging youth to care for and protect these shared spaces.</p>
                     <div class="social-icons mt-4">
                         <a href="https://www.facebook.com/" class="text-white me-3"><i
                                 class="fab fa-facebook-f"></i></a>
@@ -450,20 +469,19 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 mb-4 mb-lg-0">
+                <div class="col-lg-3 mb-4 mb-lg-0">
                     <h3 class="h5 mb-3">Quick Links</h3>
                     <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none"><i
-                                    class="fas fa-home me-2"></i>Home</a></li>
-                        <li class="mb-2"><a href="aboutus.html" class="text-white text-decoration-none"><i
+                        <li class="mb-2"><a href="index.html" class="text-white text-decoration-none  footer-link">
+                            <i class="fas fa-home me-2"></i>Home</a></li>
+                        <li class="mb-2"><a href="aboutus.html" class="text-white text-decoration-none footer-link"><i
                                     class="fas fa-info-circle me-2"></i>About Us</a></li>
 
 
                         <li class="mb-1 footer-accordion">
                             <input type="checkbox" id="learning">
                             <label for="learning" class="footer-label"><i class="bi bi-mortarboard-fill"></i>
-                                Learning Hub
-                                <i class="bi bi-caret-down-fill"></i>
+                                Learning Hub <i class="bi bi-caret-down-fill"></i>
                             </label>
 
                             <ul class="footer-sublist">
@@ -481,7 +499,7 @@
                             </label>
 
                             <ul class="footer-sublist">
-                                <li><a href="combinedfinal.html">Quizzes + Mini Games</a></li>
+                                <li><a href="combinedfinal.html">Fun Quizzes</a></li>
                                 <li><a href="blogpage.html">Blogs & Youth Storytelling</a></li>
                                 <li><a href="events.html">Special Events</a></li>
                             </ul>
@@ -489,7 +507,7 @@
 
 
                         <li><a href="https://docs.google.com/document/d/1KBs0JQOvbeFJuwe8dePoCFIE3pOzIx7nn3qXni5PmcY/edit?usp=sharing"
-                                class="text-white text-decoration-none"><i
+                                class="text-white text-decoration-none footer-link"><i
                                     class="fas fa-envelope me-2"></i>References</a></li>
                     </ul>
                 </div>
@@ -516,8 +534,8 @@
             <hr class="my-4 opacity-25">
 
             <div class="text-center small">
-                <p class="mb-0">&copy; 2025 Beyond the Bench. All rights reserved. | Designed for environmental
-                    awareness and wellness.</p>
+                <p class="mb-0">&copy; 2025 Beyond the Bench. All rights reserved. | <a href="terms.html">Terms & Privacy</a></p>
+             
             </div>
         </div>
     </footer>
@@ -548,7 +566,12 @@
                 });
             });
         });
+
+
+        
     </script>
+
+    
 </body>
 
 </html>
